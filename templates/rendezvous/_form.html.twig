@@ -25,11 +25,12 @@
         </div>
 
         <div class="mb-3">
-            {{ form_label(form.etatRV, 'etatRV', {'label_attr': {'class': 'form-label'}}) }}
+         
+             {{ form_label(form.etatRV, 'etatRV', {'label_attr': {'class': 'form-label'}}) }}
             {{ form_widget(form.etatRV, {'attr': {'class': 'form-control'}}) }}
             {% if form_errors(form.etatRV) is not empty %}
                 <div class="alert text-danger">
-                    {{ form_errors(form.etatRV) }}
+                    {{ form_errors(form.etatRV) }} 
                 </div>
             {% endif %}
         </div>
