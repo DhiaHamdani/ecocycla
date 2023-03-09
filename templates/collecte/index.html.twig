@@ -65,6 +65,7 @@
                 <td>{{ collecte.contact }}</td>
                 <td>
                 
+                
                     <a href="{{ path('app_collecte_show', {'id': collecte.id}) }}" class="btn btn-sm btn-info" >Voir</a>
                     <a href="{{ path('app_collecte_edit', {'id': collecte.id}) }}" class="btn btn-sm btn-warning" >Modifier</a>
                     {% if  collecte.etatC == 1 %} <a href="{{ path('app_rendezvous_new', {'id': collecte.id}) }}" class="badge bg-success" >Rendez vous</a> {% endif %}
